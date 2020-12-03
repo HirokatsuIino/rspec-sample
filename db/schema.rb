@@ -13,25 +13,25 @@
 ActiveRecord::Schema.define(version: 2020_12_03_080327) do
 
   create_table "food_enquetes", force: :cascade do |t|
-    t.string "name"
-    t.string "mail"
-    t.integer "age"
-    t.integer "food_id"
-    t.integer "score"
-    t.string "request"
-    t.integer "present_id"
+    t.string "name", null: false
+    t.string "mail", null: false
+    t.integer "age", null: false
+    t.integer "food_id", null: false
+    t.integer "score", null: false
+    t.string "request", null: false
+    t.integer "present_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "gym_enquetes", force: :cascade do |t|
-    t.string "name"
-    t.string "mail"
-    t.integer "age"
-    t.integer "course_id"
-    t.integer "score"
-    t.string "request"
-    t.integer "present_id"
+    t.string "name", null: false
+    t.string "mail", null: false
+    t.integer "age", null: false
+    t.integer "course_id", null: false
+    t.integer "score", null: false
+    t.string "request", null: false
+    t.integer "present_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
